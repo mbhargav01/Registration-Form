@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration-Form</title>
+<style>
+    form{
+
+        background-color: skyblue;
+        width:500px;
+        margin: 4% 32%;
+        font-size: 30px;
+    }
+    input[type="text"],input[type="number"],input[type="email"],input[type="file"] {
+    border-collapse: collapse;
+	width:60%;
+    height:30px;
+    margin-bottom: 10px;
+	}
+    input[type='submit']{
+  margin-left: 180px;
+  margin-bottom: 10px;
+  align-items: center;
+  height: 40px;
+  width: 70px;
+  border: 3px solid black; 
+    }
+    h1{text-align: center;}
+</style>
+</head>
+<body>
+<form action="upload" enctype="multipart/form-data" method="post">
+<h1>Registration-Form</h1>
+First Name <input type="text" name="fname"><br>
+Last Name <input type="text" name="lname"><br>
+Mobile No. <input type="number" name="mobile"><br>
+Email Id <input type="email" name="email"><br>
+Gender <input type="radio" name="gender" value="male">male<input type="radio" name="gender" value="female">female <br>
+Address <input type="text" name="address"><br>
+Photo <input type="file" name="file" style="width:60%;height:30px;"><br>
+<input type="submit" name="Register"><br>
+</form>
+</body>
+</html>
